@@ -1,0 +1,1 @@
+# Python script for sending e-mail notifications on updates to the National Institute for Health and Care Excellence (NICE) guidelines.
