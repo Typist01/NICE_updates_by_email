@@ -154,9 +154,6 @@ def get_data():
         published = datetime.datetime.strptime(x.find_all("td")[2].time["data-shortdate"], "%d/%m/%Y")
         last_updated = datetime.datetime.strptime(x.find_all("td")[3].time["data-shortdate"], "%d/%m/%Y")  # date
         if last_checked_date is False or last_checked_date < last_updated:
-            print(last_checked_date)
-            print(last_updated)
-            print(last_checked_date<last_updated)
             item = {"name" : name, "link": link, "published":published.strftime("%d/%m/%Y"), "last_updated": last_updated.strftime("%d/%m/%Y")}
             data_list.append(item)
             f = open("last_checked.txt", "w")
