@@ -133,7 +133,7 @@ def send_message(data_list):
     # msg.attach(part1)
     msg.attach(part2)
 
-    with smtplib.SMTP("smtp-mail.outlook.com") as connection:
+    with smtplib.SMTP("smtp-mail.outlook.com", 587) as connection:
         connection.ehlo()
         connection.starttls()
         connection.login(user=my_email, password=my_password)
