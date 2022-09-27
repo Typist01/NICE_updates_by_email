@@ -28,7 +28,7 @@ with open("last_checked.txt") as f:
 def send_message(data_list):
     list_string = ""
     for x in data_list:
-        list_string += (f'<li class="guide-list-item"><a href="{x["link"]}">{x["name"]}</a><span class="date-text"> updated @ {x["published"]} posted @ {x["last_updated"]}</span> </li>')
+        list_string += (f'<li class="guide-list-item"><a href="{x["link"]}">{x["name"]}</a><span class="date-text"> published on {x["published"]} & last updated on {x["last_updated"]}</span> </li>')
 
     # Create message container - the correct MIME type is multipart/alternative.
     my_email = os.getenv("MY_EMAIL")
