@@ -134,7 +134,7 @@ def send_message(data_list):
     msg.attach(part2)
 
     with smtplib.SMTP("smtp-mail.outlook.com") as connection:
-        connection.ehlo();
+        connection.ehlo()
         connection.starttls()
         connection.login(user=my_email, password=my_password)
         connection.sendmail(from_addr=my_email, to_addrs=recipient_email, msg=msg.as_string())
