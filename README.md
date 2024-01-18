@@ -7,5 +7,5 @@
 
 `MY_PASSWORD="MYPASSWORD"`
 
-Run the script with to receive updates.
+Run `main.py` to receive updates.
 Script should be executed repeatedly (every day) for regular updates using Cron Jobs in Linux for example, or using automation on an external server.
