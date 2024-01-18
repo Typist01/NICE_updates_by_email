@@ -7,5 +7,5 @@
 
 `MY_PASSWORD="MYPASSWORD"`
 
-Run the script with to receive updates since the date written in last-checked.txt.
+Run the script with to receive updates.
 Script should be executed repeatedly (every day) for regular updates using Cron Jobs in Linux for example, or using automation on an external server.
